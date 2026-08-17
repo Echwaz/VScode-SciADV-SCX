@@ -1,0 +1,30 @@
+{
+    "name": "scx-script-syntax",
+    "displayName": "SCX Script Syntax",
+    "description": "Syntax highlighting for MAGES SCX extracted scripts",
+    "version": "0.0.1",
+    "publisher": "local",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "scx-script",
+                "aliases": [
+                    "SCX Script"
+                ],
+                "extensions": [
+                    ".scx.txt"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "scx-script",
+                "scopeName": "source.scx",
+                "path": "./syntaxes/scx.tmLanguage.json"
+            }
+        ]
+    }
+}

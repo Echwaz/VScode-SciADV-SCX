@@ -1,0 +1,33 @@
+{
+    "scopeName": "source.scx",
+    "patterns": [
+        {
+            "name": "entity.name.tag.scx",
+            "match": "\\[(?:center|line)\\]"
+        },
+        {
+            "name": "entity.name.tag.name.scx",
+            "match": "\\[name\\]"
+        },
+        {
+            "name": "variable.language.character.scx",
+            "match": "(?<=\\[name\\])[^\\[]+(?=\\[line\\])"
+        },
+        {
+            "name": "entity.other.attribute-name.scx",
+            "match": "\\[margin\\s+top=\"[^\"]*\"\\]"
+        },
+        {
+            "name": "entity.name.function.scx",
+            "match": "\\[evaluate\\s+expr=\"[^\"]*\"\\]"
+        },
+        {
+            "name": "entity.other.attribute-name.scx",
+            "match": "\\[color\\s+index=\"[^\"]*\"\\]"
+        },
+        {
+            "name": "keyword.control.scx",
+            "match": "\\[%[a-zA-Z]+\\]"
+        }
+    ]
+}
