@@ -1,0 +1,36 @@
+{
+    "name": "scx-script-preview",
+    "displayName": "SCX Script Preview",
+    "description": "Live preview for extracted MAGES SCX script text files.",
+    "version": "0.0.1",
+    "publisher": "local",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:scx.openPreview"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "scx.openPreview",
+                "title": "SCX: Open Preview"
+            },
+            {
+                "command": "scx.refreshPreview",
+                "title": "SCX: Refresh Preview"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "scx.openPreview",
+                "key": "ctrl+alt+p",
+                "when": "editorTextFocus"
+            }
+        ]
+    }
+}
